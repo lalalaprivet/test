@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Js test</title>
+</head>
+<body>  
+    <div class="add_date">
+        <form class="form_add_date">
+            <h2>Добавить данные</h2>
+            <div class="brand">
+                <h3>Укажите Марку авто:</h3>
+                <input type="text" name="brand"  id="brand">
+            </div>
+            <div class="model">
+                <h3>Укажите модель авто:</h3>
+                <input type="text" name="model" id="model">
+            </div>
+            <div class="color">
+                <h3>Укажите цвет авто:</h3>
+                <input type="text" name="color" id="color">
+            </div>
+            <div class="number">
+                <h3>Укажите количество авто:</h3>
+                <input type="number" name="number" id="number">
+            </div>
+            <div class="price">
+                <h3>Укажите цену авто:</h3>
+                <input type="number" name="price" id="price">
+            </div>
+                <button type="button" id="add_car">Добавить</button>
+        </form>
+
+        <div class="search">
+            <form class="form_search">
+                <h2>Поиск по таблице...</h2>
+                <br>
+                <input type="search" onkeyup="tableSearch()" id="search-text" placeholder="Введите..">
+                <a href="inex.html"><button>Очистить поиск</button></a>
+            </form>   
+        </div>
+    </div>
+    <p>(Для сортировки, кликните на столбец. Для редактирования данных, кликните на элемент в строке)</p>
+    <table id="tableCars">
+        <thead>
+            <tr id="t1">
+                <th data-type="text">Бренд</th>
+                <th data-type="text">Модель</th>
+                <th data-type="text">Цвет</th>
+                <th data-type="integer">Количество</th>
+                <th data-type="double">Цена</th>
+                <th data-type="none"></th>
+            </tr>
+    </table>
+
+    <ul id = "pagination">
+    </ul>
+<script src="script.js"></script>
+</body>
+</html>
+
